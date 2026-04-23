@@ -7,11 +7,11 @@ Manual-only, user-triggered. Inspired by [gsd](https://github.com/gsd-build/get-
 ## Install (team distribution)
 
 ```
-/plugin marketplace add <owner>/trace-me-if-you-can
+/plugin marketplace add i4BSolutions/trace-me-if-you-can
 /plugin install trace-me-if-you-can@trace-me-if-you-can
 ```
 
-Replace `<owner>/trace-me-if-you-can` with this repo's GitHub path. Every teammate runs the same two commands — no extra setup. The plugin installs at user level, so the `/trace-*` commands are available in every project.
+Every teammate runs the same two commands — no extra setup. The plugin installs at user level, so the `/trace-*` commands are available in every project.
 
 ## Commands
 
