@@ -1,0 +1,20 @@
+{
+  "name": "trace-me-if-you-can",
+  "owner": {
+    "name": "geeksquadstudio",
+    "email": "geek@geeksquadstudio.com"
+  },
+  "metadata": {
+    "description": "Project progress tracker that syncs local trace.md memory to Notion Backlog + AC databases."
+  },
+  "plugins": [
+    {
+      "name": "trace-me-if-you-can",
+      "source": ".",
+      "description": "Manual commands to maintain trace.md and sync project progress to two Notion databases (Backlog and Acceptance Criteria).",
+      "version": "0.1.0",
+      "category": "productivity",
+      "tags": ["notion", "progress", "tracking", "memory"]
+    }
+  ]
+}
