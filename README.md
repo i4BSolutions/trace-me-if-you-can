@@ -4,14 +4,32 @@ A Claude Code plugin that keeps a local `trace.md` memory of your project and sy
 
 Manual-only, user-triggered. Inspired by [gsd](https://github.com/gsd-build/get-shit-done).
 
-## Install (team distribution)
+## Install
+
+```
+npx trace-me-if-you-can-cc@latest
+```
+
+That's it. One command, no Claude Code plugin marketplace dance. Re-run the same command any time to update. Restart Claude Code (or `/reload`) so the new `/trace-*` commands appear.
+
+Installs at user level — `~/.claude/commands/` and `~/.claude/skills/trace-core/` — so the commands are available in every project.
+
+To remove:
+
+```
+npx trace-me-if-you-can-cc@latest --uninstall
+```
+
+### Alternative: Claude Code plugin marketplace
+
+If you prefer the native plugin flow (lets you manage it via `/plugin`):
 
 ```
 /plugin marketplace add i4BSolutions/trace-me-if-you-can
 /plugin install trace-me-if-you-can@trace-me-if-you-can
 ```
 
-Every teammate runs the same two commands — no extra setup. The plugin installs at user level, so the `/trace-*` commands are available in every project.
+Pick one method — don't run both, you'll get duplicate commands.
 
 ## Commands
 

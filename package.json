@@ -1,0 +1,39 @@
+{
+  "name": "trace-me-if-you-can-cc",
+  "version": "0.1.0",
+  "description": "One-command installer for the trace-me-if-you-can Claude Code plugin. Copies trace-* slash commands and the trace-core skill into ~/.claude so they are available in every project.",
+  "bin": {
+    "trace-me-if-you-can-cc": "bin/install.js"
+  },
+  "files": [
+    "bin",
+    "commands",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claude-code",
+    "claude-code-plugin",
+    "notion",
+    "progress",
+    "tracking",
+    "memory"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "geeksquadstudio",
+    "email": "geek@geeksquadstudio.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i4BSolutions/trace-me-if-you-can.git"
+  },
+  "homepage": "https://github.com/i4BSolutions/trace-me-if-you-can#readme",
+  "bugs": {
+    "url": "https://github.com/i4BSolutions/trace-me-if-you-can/issues"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
