@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Project progress tracker that syncs a local trace.md memory file to two Notion databases (Backlog and Acceptance Criteria). Manual-only, user-level.",
   "author": {
-    "name": "geeksquadstudio",
-    "email": "geek@geeksquadstudio.com"
+    "name": "yaungni",
+    "email": "yaungni@i4bsolutions.com"
   },
   "keywords": ["notion", "progress", "tracking", "memory", "gsd-style"]
 }

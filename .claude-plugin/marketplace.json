@@ -1,8 +1,8 @@
 {
   "name": "trace-me-if-you-can",
   "owner": {
-    "name": "geeksquadstudio",
-    "email": "geek@geeksquadstudio.com"
+    "name": "yaungni",
+    "email": "yaungni@i4bsolutions.com"
   },
   "metadata": {
     "description": "Project progress tracker that syncs local trace.md memory to Notion Backlog + AC databases."
