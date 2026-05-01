@@ -9,13 +9,14 @@ Read-only profile inspection. Quicker than `/trace-progress` — no Notion calls
 ## Steps
 
 1. If `trace.md` does not exist: tell the user to run `/trace-profile` and stop.
-2. Read `trace.md` and extract the Profile section.
+2. Read `trace.md` and extract the Profile section (Project Name, Notion User ID, Backlog DB ID, AC DB ID) and the Database Schemas section titles.
 3. Read `.env` at project root. Note only whether `TRACE_NOTION_TOKEN` is present (never print its value).
 4. **Report**:
 
    ```markdown
    # trace profile
 
+   - Project Name: <name>
    - Notion User ID: <uuid>
    - Backlog DB ID: <id>  (schema: "<title>" captured)
    - AC DB ID: <id>  (schema: "<title>" captured)

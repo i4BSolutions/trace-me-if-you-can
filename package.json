@@ -1,6 +1,6 @@
 {
   "name": "trace-me-if-you-can-cc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "One-command installer for the trace-me-if-you-can Claude Code plugin. Copies trace-* slash commands and the trace-core skill into ~/.claude so they are available in every project.",
   "bin": {
     "trace-me-if-you-can-cc": "bin/install.js"

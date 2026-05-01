@@ -11,10 +11,11 @@ Read-only status report. Does not write anywhere.
 1. If `trace.md` does not exist: tell the user to run `/trace-profile` and stop.
 2. Load the `trace-core` skill.
 3. Read `trace.md` and extract:
-   - Profile: user ID, Backlog DB ID, AC DB ID.
+   - Profile: Project Name, user ID, Backlog DB ID, AC DB ID.
    - Last Progress Log entry (date + body).
    - Total number of Progress Log entries.
    - Database schema titles.
+   - Project Snapshot `Last refreshed` date and counts of Backlog items and AC items.
 4. Read `.env`. Note only whether `TRACE_NOTION_TOKEN` is present (never print its value).
 5. If the token is present, query both databases (see `trace-core` for the curl shape). For each:
    - Count total items returned.
@@ -25,15 +26,17 @@ Read-only status report. Does not write anywhere.
    ```markdown
    # trace-progress
 
-   **Profile** · user `<short-uuid>…` · Backlog DB `<id>` · AC DB `<id>` · token: <present|missing>
+   **Profile** · project `<Project Name>` · user `<short-uuid>…` · Backlog DB `<id>` · AC DB `<id>` · token: <present|missing>
 
    **Backlog DB — <title>**: <total> items
    - <status option>: <count>
    - ...
 
    **AC DB — <title>**: <total> items
-   - <status option>: <count>
+   - <Check option>: <count>
    - ...
+
+   **Local snapshot** · refreshed <date> · Backlog items: <N> · AC items: <M>
 
    **Last sync** · <date>
    > <summary line from last Progress Log entry>
